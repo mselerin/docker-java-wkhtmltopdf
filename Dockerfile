@@ -1,5 +1,5 @@
-FROM surnet/alpine-wkhtmltopdf:3.10-0.12.5-small as wkhtmltopdf
-FROM adoptopenjdk/openjdk11:jre-11.0.6_10-alpine
+FROM surnet/alpine-wkhtmltopdf:3.12-0.12.6-small as wkhtmltopdf
+FROM adoptopenjdk/openjdk11:alpine-jre
 
 # Install dependencies for wkhtmltopdf
 RUN apk add --no-cache \
