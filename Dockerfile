@@ -15,7 +15,6 @@ RUN apk add --no-cache \
     ttf-droid \
     ttf-freefont \
     ttf-liberation \
-    ttf-ubuntu-font-family \
     && apk add --no-cache --virtual .build-deps \
     msttcorefonts-installer \
     \
