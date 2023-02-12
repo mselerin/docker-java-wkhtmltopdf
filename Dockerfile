@@ -1,5 +1,5 @@
-FROM surnet/alpine-wkhtmltopdf:3.12-0.12.6-small as wkhtmltopdf
-FROM adoptopenjdk/openjdk11:alpine-jre
+FROM surnet/alpine-wkhtmltopdf:3.17.0-0.12.6-small as wkhtmltopdf
+FROM eclipse-temurin:17-jre-alpine
 
 # Install dependencies for wkhtmltopdf
 RUN apk add --no-cache \
@@ -15,7 +15,6 @@ RUN apk add --no-cache \
     ttf-droid \
     ttf-freefont \
     ttf-liberation \
-    ttf-ubuntu-font-family \
     && apk add --no-cache --virtual .build-deps \
     msttcorefonts-installer \
     \
